@@ -16,7 +16,7 @@
  */
 
 #import "JDSound.h"
-#import "CDVFile.h"
+#import <Cordova/CDVFile.h>
 #import <AVFoundation/AVFoundation.h>
 #include <math.h>
 
