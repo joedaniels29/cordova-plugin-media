@@ -1,3 +1,4 @@
+
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -50,7 +51,7 @@ var Media = function(src, successCallback, errorCallback, statusCallback) {
     this._position = -1;
 
     Media.onStatus(this.id, Media.MEDIA_STATE, Media.MEDIA_STARTING);
-    
+
     try {
         this.node = createNode(this);
     } catch (err) {
@@ -61,7 +62,7 @@ var Media = function(src, successCallback, errorCallback, statusCallback) {
 /**
  * Creates new Audio node and with necessary event listeners attached
  * @param  {Media} media Media object
- * @return {Audio}       Audio element 
+ * @return {Audio}       Audio element
  */
 function createNode (media) {
     var node = new Audio();

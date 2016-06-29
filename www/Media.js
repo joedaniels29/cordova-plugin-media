@@ -242,16 +242,3 @@ function onMessageFromNative(msg) {
         throw new Error('Unknown media action' + msg.action);
     }
 }
-
-if (cordova.platformId === 'android' || cordova.platformId === 'amazon-fireos' || cordova.platformId === 'windowsphone') {
-
-    var channel = require('cordova/channel');
-
-    channel.createSticky('onMediaPluginReady');
-    channel.waitForInitialization('onMediaPluginReady');
-
-    channel.onCordovaReady.subscribe(function() {
-        exec(onMessageFromNative, undefined, 'Media', 'messageChannel', []);
-        channel.initializationComplete('onMediaPluginReady');
-    });
-}

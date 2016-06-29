@@ -15,7 +15,7 @@
  under the License.
  */
 
-#import "CDVSound.h"
+#import "JDSound.h"
 #import "CDVFile.h"
 #import <AVFoundation/AVFoundation.h>
 #include <math.h>
@@ -26,7 +26,7 @@
 #define CDVFILE_PREFIX @"cdvfile://"
 #define RECORDING_WAV @"wav"
 
-@implementation CDVSound
+@implementation JDSound
 
 @synthesize soundCache, avSession, currMediaId;
 
@@ -637,7 +637,7 @@
 
     if ((audioFile != nil) && (audioFile.resourceURL != nil)) {
 
-        __weak CDVSound* weakSelf = self;
+        __weak JDSound* weakSelf = self;
 
         void (^startRecording)(void) = ^{
             NSError* __autoreleasing error = nil;

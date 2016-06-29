@@ -168,7 +168,7 @@
 * [windows8] commandProxy was moved
 * [CB-4889](https://issues.apache.org/jira/browse/CB-4889) renaming references
 * [CB-4889](https://issues.apache.org/jira/browse/CB-4889) renaming org.apache.cordova.core.media to org.apache.cordova.media
-* [CB-4847](https://issues.apache.org/jira/browse/CB-4847) iOS 7 microphone access requires user permission - if denied, CDVCapture, CDVSound does not handle it properly
+* [CB-4847](https://issues.apache.org/jira/browse/CB-4847) iOS 7 microphone access requires user permission - if denied, CDVCapture, JDSound does not handle it properly
 * Rename CHANGELOG.md -> RELEASENOTES.md
 * [CB-4799](https://issues.apache.org/jira/browse/CB-4799) Fix incorrect JS references within native code on Android & iOS
 * Fix compiler/lint warnings
